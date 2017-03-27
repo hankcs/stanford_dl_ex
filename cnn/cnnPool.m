@@ -43,7 +43,6 @@ for i = 1 : numFilters
                 re = poolDim * r;
                 cb = 1 + poolDim * (c-1);
                 ce = poolDim * c;
-%                 blockFeatures = convolvedFeatures(i, j, rb : re, cb : ce);
                 pooledFeatures(r, c, i, j) = mean(mean(convolvedFeatures( rb : re, cb : ce,i,j)));
             end
         end
