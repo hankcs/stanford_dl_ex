@@ -1,1 +1,3 @@
-/Users/hankcs/Documents/Course/UFLDL/stanford_dl_ex-solutions/cnn/sigmoid.m
+function [ output ] = sigmoid( input )
+
+output = 1./(1+exp(-input));
